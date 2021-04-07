@@ -1,5 +1,5 @@
 {
-    "name": "mickmelon/flarum-ext-coloured-usernames",
+    "name": "samerton/flarum-ext-coloured-usernames",
     "description": "Set the username colour to the same as the rank colour (only on posts)",
     "keywords": [
         "extension",
@@ -8,17 +8,21 @@
         "groups"
     ],
     "type": "flarum-extension",
-	"version": "0.1.0",
+    "version": "0.2.0",
     "license": "MIT",
     "authors": [
         {
             "name": "MickMelon",
             "homepage": "https://policemp.com/"
+        },
+        {
+            "name": "samerton",
+            "homepage": "https://github.com/samerton"
         }
     ],
 	"support": {
-        "issues": "https://github.com/mickmelon/flarum-ext-coloured-usernames/issues",
-        "source": "https://github.com/mickmelon/flarum-ext-coloured-usernames"
+        "issues": "https://github.com/samerton/flarum-ext-coloured-usernames/issues",
+        "source": "https://github.com/samerton/flarum-ext-coloured-usernames"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.15"

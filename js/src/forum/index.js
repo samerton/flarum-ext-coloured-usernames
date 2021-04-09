@@ -22,13 +22,8 @@ function applyColor(vdom, user) {
 
   // If there are no color groups, skip
   if (!firstColoredGroup) {
-    console.log('No colour');
     return;
   }
-
-  console.log(vdom);
-
-  console.log(firstColoredGroup.color());
 
   vdom.attrs = vdom.attrs || {};
   vdom.attrs.style = vdom.attrs.style || {};
@@ -58,6 +53,6 @@ app.initializers.add('mickmelon-coloured-usernames', () => {
       .children.find(matchClass('UserCard-identity'))
       .children.find(matchClass('username'));
 
-      applyColor(username, this.attrs.user);
+      if (this.attrs && this.attrs.user) applyColor(username, this.attrs.user);
   });
 });

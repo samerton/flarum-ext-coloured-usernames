@@ -53,6 +53,6 @@ app.initializers.add('mickmelon-coloured-usernames', () => {
       .children.find(matchClass('UserCard-identity'))
       .children.find(matchClass('username'));
 
-      if (this.attrs && this.attrs.user) applyColor(username, this.attrs.user);
+      if (this && this.attrs && this.attrs.user) applyColor(username, this.attrs.user);
   });
 });

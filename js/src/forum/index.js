@@ -25,6 +25,11 @@ function applyColor(vdom, user) {
     return;
   }
 
+  // Ensure we have vdom
+  if (!vdom) {
+    return;
+  }
+
   vdom.attrs = vdom.attrs || {};
   vdom.attrs.style = vdom.attrs.style || {};
   vdom.attrs.style.color = firstColoredGroup.color();
